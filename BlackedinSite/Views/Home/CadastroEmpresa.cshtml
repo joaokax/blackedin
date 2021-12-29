@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Cadastro Profissional";
+}
+
+<main id="bg-cad-empresa">
+    <div class="container d-flex justify-content-center align-items-center" style="height: 850px;">
+        <div class="row" style="width: 100%;height: 800px;background-color: aliceblue;border-radius: 15px;border-bottom-right-radius: 15px;">
+            <div id="cad-img-empresa" class="col-md-6">
+                </div><div class="col d-flex flex-column justify-content-center" style="border-top-right-radius: 15px;border-bottom-right-radius: 15px;background-color: white;border: none;">
+                <form>
+                    <h1>Cadastre-se</h1><label>Nome completo</label><input class="form-control" type="text" /><label>Idade</label><input class="form-control" type="number" style="width: 100%;" /><label>E-mail</label><input class="form-control" type="email" style="width: 100%;" /><label>Gênero:  </label><label><input type="radio" /> Masculino  </label><label><input type="radio" /> Feminino  </label><label><input type="radio" /> LGBTQIA+  </label><label><input type="radio" /> Outro</label><input class="form-control" type="text" /><label>País</label><input class="form-control" type="text" /><label style="width: 100%;">Área de atuação</label><select class="form-control">
+                        <optgroup label="Escolha sua área">
+                            <option value="12" selected> </option>
+                            <option value="12">Técnologia</option>
+                            <option value="13">Médicina</option>
+                            <option value="14">Engenharia</option>
+                            <option value="14">Recursos humanos</option>
+                            <option value="14">Vendas</option>
+                            <option value="14">Logistica</option>
+                        </optgroup>
+                    </select>
+                    <label style="width: 100%;">Qual modelo de trabalho prefere?</label>
+                    <label><input type="radio" /> Presencial  </label>
+                    <label><input type="radio" /> Remoto  </label>
+                    <label><input type="radio" /> Qualquer</label>
+                </form>
+                <div id="btn-form" class="d-flex" style="justify-content: end;margin-top: 50px;">
+                    <button class="btn px-4 py-2 mr-3 font-weight-light" type="button" style="font-size: 20px;background-color: white;box-shadow: 0 2px 5px 0 rgba(0,0,0,.2),0 2px 10px 0 rgba(0,0,0,.1);color: #56585b;border: none;">Resetar</button>
+                    <button class="btn px-4 py-2 font-weight-light" type="button" style="font-size: 20px;background-color: #ffa900;box-shadow: 0 2px 5px 0 rgba(0,0,0,.2),0 2px 10px 0 rgba(0,0,0,.1);color: #56585b;border: none;">Cadastrar</button></div>
+            </div>
+        </div>
+    </div>
+</main>
+
