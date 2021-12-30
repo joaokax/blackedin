@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<main class="d-flex">
+    <aside id="match-aside" class="ml-4 mt-4">
+        <h1 style="font-size: 26px;text-align: left;margin-left: 15px;padding-top: 50PX;">Filtros</h1><label class="d-block" style="margin-left: 15px;color: #888888;">Profissional desejado</label>
+        <input type="text" style="margin-left: 15px;width: 220px;">
+        <label class="d-block" style="margin-left: 15px;color: #888888;">Modelo de trabalho</label>
+        <div class="form-check" style="margin-left: 15px;">
+            <input class="form-check-input" type="radio" id="formCheck-1">
+            <label class="form-check-label" for="formCheck-1">Presencial</label>
+        </div>
+        <div class="form-check" style="margin-left: 15px;">
+            <input class="form-check-input" type="radio" id="formCheck-2">
+            <label class="form-check-label" for="formCheck-2">Remoto</label>
+        </div>
+        <div class="form-check" style="margin-left: 15px;">
+            <input class="form-check-input" type="radio" id="formCheck-3">
+            <label class="form-check-label" for="formCheck-3">Hibrido</label>
+        </div>
+        <label class="d-block" style="margin-left: 15px;color: #888888;">Distância</label>
+        <input type="range" style="margin-left: 15px;background: var(--blue);width: 220px;">
+        <label class="d-block" style="margin-left: 15px;color: #888888;">Nivel do profissional</label>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button" style="margin-left: 15px;width: 220px;">Selecione</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Junior</a>
+                <a class="dropdown-item" href="#">Pleno</a>
+                <a class="dropdown-item" href="#">Senior</a>
+            </div>
+        </div>
+        <label class="d-block" style="margin-left: 15px;color: #888888;">Aceita PCD</label>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button" style="margin-left: 15px;width: 220px;">Selecione</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Sim</a>
+                <a class="dropdown-item" href="#">Não</a>
+            </div>
+        </div>
+        <label class="d-block" style="margin-left: 15px;color: #888888;">Tipo de Tipo de contrato</label>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button" style="margin-left: 15px;width: 220px;">Selecione</button>
+            <div class="dropdown-menu"><a class="dropdown-item" href="#">CLT</a>
+            <a class="dropdown-item" href="#">PJ</a>
+            <a class="dropdown-item" href="#">Qualquer</a></div>
+        </div>
+    </aside>
+
+    <div class="container">
+        <div class="row">
+            <div id="profissional-img" class="col-md-12 mt-1 d-flex align-items-end justify-content-center">
+                <div id="buttons" class="d-flex align-items-baseline mb-2">
+                    <div id="x" class="all-btn"><a href="#"><i class="fas fa-times"></i></a></div>
+                    <div id="heart" class="all-btn"><a href="#"><i class="fas fa-heart"></i></a></div>
+                    <div id="star" class="all-btn"><a href="#"><i class="fas fa-star"></i></a></div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="background: var(--white);border-bottom-right-radius: 30px;border-bottom-left-radius: 30px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                <h1 style="padding: 0px;padding-top: 25px;">Nathália</h1>
+                <p>Pessoa Desenvolvedora full stack jr</p>
+                <p style="font-weight: bold;">Sobre mim: </p>
+                <p>Sou Formada como técnica em sistemas da informação, atualmente graduanda em Engenharia de software, tenho conhecimento em ReactJS, NodeJs, postgreeSQL e Git.</p>
+            </div>
+        </div>
+    </div>
+</main>

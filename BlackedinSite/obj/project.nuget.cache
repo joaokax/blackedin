@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ck/A1cnFj7/XJsLujr9gdOSHNyqISZSZG581/6qT0Co2nGcHwANmD9dgQK2LGwE9CfCQXtXHkL5zHXA4yTGq9A==",
+  "dgSpecHash": "l1J9vPA42RLun00SjEr0P58IY5ojeuVMELI5xnyeWexvxXKna+5RE53RLHySKRMoXGLho4PgcqgFSmxPsNXnNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tassi\\source\\repos\\BlackedinSite\\BlackedinSite\\BlackedinSite.csproj",
+  "projectFilePath": "C:\\Users\\tassi\\OneDrive\\Área de Trabalho\\Blackedin\\Projeto\\BlackedinSite\\BlackedinSite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tassi\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512"
   ],

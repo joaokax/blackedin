@@ -1,14 +1,30 @@
 ﻿@{
-    ViewData["Title"] = "Cadastro Empresa";
+    ViewData["Title"] = "Cadastro profissional";
 }
 
+
+
 <main id="bg-cad-profissional">
-    <div class="container d-flex justify-content-center align-items-center" style="height: 850px;">
-        <div class="row" style="width: 100%;height: 800px;background-color: aliceblue;border-radius: 15px;border-bottom-right-radius: 15px;">
-            <div id="cad-img-profissional" class="col-md-6" ></div>
-            <div class="col d-flex flex-column justify-content-center" style="border-top-right-radius: 15px;border-bottom-right-radius: 15px;background-color: white;border: none;">
+    <div id="container-profissional" class="container d-flex justify-content-center align-items-center">
+        <div id="form-container" class="row">
+            <div id="cad-img-profissional" class="col-md-6"></div>
+            <div id="border-profissional" class="col d-flex flex-column justify-content-center">
                 <form>
-                    <h1>Cadastre-se</h1><label>Nome da Empresa</label><input class="form-control" type="text" /><label>Quantidade de Funcionarios</label><input class="form-control" type="number" style="width: 100%;" /><label>E-mail da Empresa</label><input class="form-control" type="email" /><label>CNPJ</label><input class="form-control" type="text" />Área de atuação</label><select class="form-control">
+                    <h1>Cadastre-se</h1>
+                    <label class="d-block">Nome completo</label>
+                    <input class="form-control" type="text" />
+                    <label class="d-block">Idade</label>
+                    <input class="form-control" type="number" />
+                    <label class="d-block">E-mail</label>
+                    <input class="form-control" type="email" />
+                    <label class="d-block">Gênero:  </label>
+                    <label><input type="radio" /> Masculino  </label>
+                    <label><input type="radio" /> Feminino  </label>
+                    <label><input type="radio" /> Não binario</label>
+                    <label class="d-block">País</label>
+                    <input class="form-control" type="text" />
+                    <label class="d-block">Área de atuação</label>
+                    <select class="form-control">
                         <optgroup label="Escolha sua área">
                             <option value="12" selected> </option>
                             <option value="12">Técnologia</option>
@@ -18,18 +34,19 @@
                             <option value="14">Vendas</option>
                             <option value="14">Logistica</option>
                         </optgroup>
-                    </select><label class="d-block">Qual modelo de trabalho oferece?</label>
+                    </select>
+                    <label class="d-block">Qual modelo de trabalho prefere?</label>
                     <label><input type="radio" /> Presencial  </label>
                     <label><input type="radio" /> Remoto  </label>
-                    <label><input type="radio" /> Hibrido  </label>
-                    <label><input type="radio" />   Outros</label>
+                    <label><input type="radio" /> Qualquer</label>
                 </form>
-                <div id="btn-form" class="d-flex" style="justify-content: end;margin-top: 50px;">
-                <button class="btn px-4 py-2 mr-3 font-weight-light" type="button" style="font-size: 20px;background-color: white;box-shadow: 0 2px 5px 0 rgba(0,0,0,.2),0 2px 10px 0 rgba(0,0,0,.1);color: #56585b;border: none;">Resetar</button>
-                <button class="btn px-4 py-2 font-weight-light" type="button" style="font-size: 20px;background-color: #ffa900;box-shadow: 0 2px 5px 0 rgba(0,0,0,.2),0 2px 10px 0 rgba(0,0,0,.1);color: #56585b;border: none;">Cadastrar</button></div>
-                <div></div>
+                <div id="btn-form" class="d-flex">
+                    <a id="button-profissional" class="btn px-4 py-2 mr-3 font-weight-light" >Resetar</a>
+                    <a id="btn-profissional" class="btn px-4 py-2 font-weight-light" asp-controller="Home" asp-action="MatchProfissional">Cadastrar</a>
+                </div>
             </div>
         </div>
     </div>
 </main>
+
 

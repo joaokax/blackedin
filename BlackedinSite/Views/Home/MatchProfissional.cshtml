@@ -2,35 +2,95 @@
     ViewData["Title"] = "Home Page";
 }
 
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+
+
 <main class="d-flex">
-    <aside id="match-aside">
-        <h1 style="font-size: 26px;text-align: left;margin-left: 15px;padding-top: 50PX;">Filtros</h1><label class="d-block" style="margin-left: 15px;color: #888888;">Cargo desejado</label><input type="text" style="margin-left: 15px;width: 220px;"><label class="d-block" style="margin-left: 15px;color: #888888;">Modelo de trabalho</label>
-        <div class="form-check" style="margin-left: 15px;"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Presencial</label></div>
-        <div class="form-check" style="margin-left: 15px;"><input class="form-check-input" type="radio" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Remoto</label></div>
-        <div class="form-check" style="margin-left: 15px;"><input class="form-check-input" type="radio" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Hibrido</label></div><label class="d-block" style="margin-left: 15px;color: #888888;">Distância</label><input type="range" style="margin-left: 15px;background: var(--blue);width: 220px;"><label class="d-block" style="margin-left: 15px;color: #888888;">Faixa salarial</label>
+    <aside id="match-aside" class="ml-4 mt-4">
+        <h1 id="match-h1">Filtros</h1>
+
+        <label id="match-label" class="d-block">Cargo desejado</label>
+        <input id="match-input-1" type="text">
+
+        <label id="match-label" class="d-block">Modelo de trabalho</label>
+
+        <div id="match-div" class="form-check">
+            <input class="form-check-input" type="radio" id="formCheck-1">
+            <label class="form-check-label" for="formCheck-1">Presencial</label>
+        </div>
+
+        <div id="match-div" class="form-check" style="margin-left: 15px;">
+            <input class="form-check-input" type="radio" id="formCheck-2">
+            <label class="form-check-label" for="formCheck-2">Remoto</label>
+        </div>
+
+        <div id="match-div" class="form-check">
+            <input class="form-check-input" type="radio" id="formCheck-3">
+            <label class="form-check-label" for="formCheck-3">Hibrido</label>
+        </div>
+
+        <label id="match-label" class="d-block" style="margin-left: 15px;color: #888888;">Distância</label>
+        <input type="range" style="margin-left: 15px;background: var(--blue);width: 220px;">
+
+        <label id="match-label" class="d-block">Faixa salarial</label>
         <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button" style="margin-left: 15px;width: 220px;">Selecione</button>
-            <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
-        </div><label class="d-block" style="margin-left: 15px;color: #888888;">Tipo de deficiência</label>
+
+            <button id="match-btn" class="btn btn-primary dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button">Selecione</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Até R$2.000</a>
+                <a class="dropdown-item" href="#">Second Item</a>
+                <a class="dropdown-item" href="#">Third Item</a>
+            </div>
+        </div>
+
+        <label id="match-label" class="d-block">Tipo de deficiência</label>
         <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button" style="margin-left: 15px;width: 220px;">Selecione</button>
-            <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
-        </div><label class="d-block" style="margin-left: 15px;color: #888888;">Tipo de Tipo de contrato</label>
+            <button id="match-btn" class="btn btn-primary dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button">Selecione</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">First Item</a>
+                <a class="dropdown-item" href="#">Second Item</a>
+                <a class="dropdown-item" href="#">Third Item</a>
+            </div>
+        </div>
+
+        <label id="match-label" class="d-block">Tipo de contrato</label>
         <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button" style="margin-left: 15px;width: 220px;">Selecione</button>
-            <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+            <button id="match-btn" class="btn btn-primary dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button">Selecione</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">First Item</a>
+                <a class="dropdown-item" href="#">Second Item</a>
+                <a class="dropdown-item" href="#">Third Item</a>
+            </div>
         </div>
     </aside>
 
     <div class="container">
         <div class="row">
-            <div id="empresa-img" class="col-md-12" ></div>
+            <div id="empresa-img" class="col-md-12 mt-1 d-flex align-items-end justify-content-center">
+                <div id="buttons" class="d-flex align-items-baseline mb-2">
+                    <div id="x" class="all-btn">
+                        <a href="#"><i class="fas fa-times"></i></a>
+                    </div>
+                    <div id="heart" class="all-btn">
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                    </div>
+                    <div id="star" class="all-btn">
+                        <a href="#"><i class="fas fa-star"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="row">
-            <div class="col-md-12" style="background: var(--white);border-bottom-right-radius: 30px;border-bottom-left-radius: 30px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-                <h1 style="padding: 0px;padding-top: 25px;">Itaú</h1>
+            <div id="match-div-2" class="col-md-12">
+                <h1 id="match-h1-2">Itaú</h1>
                 <p>Desenvolvedor full-stack jr</p>
-                <p style="font-weight: bold;">Sobre a vaga:</p>
+                <p id="match-p">Sobre a vaga:</p>
                 <p>Desenvolver códigos elegantes, estáveis, <br>confiáveis e, não menos importante, fáceis de manter. Queremos código <br>limpo e que funcione bem, Desenvolver códigos e soluções sempre pensando<br> em eficiência, escalabilidade e estabilidade.<br></p>
             </div>
         </div>
