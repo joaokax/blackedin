@@ -15,6 +15,6 @@ namespace BlackedinSite.Models
 
         public Profissional Profissional { get; set; }
 
-        public int ResultadoContato { get; set; }
+        public string ResultadoContato { get; set; }
     }
 }
