@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tassi\\OneDrive\\Área de Trabalho\\Blackedin\\Projeto\\BlackedinSite\\BlackedinSite.csproj": {}
+    "C:\\Users\\Lucas\\Source\\Repos\\Blackedin\\BlackedinSite\\BlackedinSite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tassi\\OneDrive\\Área de Trabalho\\Blackedin\\Projeto\\BlackedinSite\\BlackedinSite.csproj": {
+    "C:\\Users\\Lucas\\Source\\Repos\\Blackedin\\BlackedinSite\\BlackedinSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tassi\\OneDrive\\Área de Trabalho\\Blackedin\\Projeto\\BlackedinSite\\BlackedinSite.csproj",
+        "projectUniqueName": "C:\\Users\\Lucas\\Source\\Repos\\Blackedin\\BlackedinSite\\BlackedinSite.csproj",
         "projectName": "BlackedinSite",
-        "projectPath": "C:\\Users\\tassi\\OneDrive\\Área de Trabalho\\Blackedin\\Projeto\\BlackedinSite\\BlackedinSite.csproj",
-        "packagesPath": "C:\\Users\\tassi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tassi\\OneDrive\\Área de Trabalho\\Blackedin\\Projeto\\BlackedinSite\\obj\\",
+        "projectPath": "C:\\Users\\Lucas\\Source\\Repos\\Blackedin\\BlackedinSite\\BlackedinSite.csproj",
+        "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lucas\\Source\\Repos\\Blackedin\\BlackedinSite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tassi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,6 +61,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "System.Text.Encoding.CodePages": {
+              "target": "Package",
+              "version": "[4.7.1, )"
             }
           },
           "imports": [
